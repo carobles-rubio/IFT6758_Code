@@ -15,9 +15,10 @@ Main file:  notebook.ipynb
 
 ## Additional results
 
-If you want to obtain other predictions, replace the variable 'kridgeReg' with the desired predictor in the following line after the "Testing" heading (box `In [33]`):
-out['Predicted'] = (np.exp(kridgeReg.predict(tst_df.iloc[:,1:-1]))-1).astype('int32') # TODO: real predictions
+If you want to obtain other predictions, replace the variable `kridgeReg` with the desired predictor in the following line after the "Testing" heading (box `In [33]`):
+
+`out['Predicted'] = (np.exp(kridgeReg.predict(tst_df.iloc[:,1:-1]))-1).astype('int32') # TODO: real predictions`
 
 Replace by the following:
-- 'lassoReg' to get the Lasso results submitted to Kaggle.
-- 'kridgeWLasso' to get the Kernel Ridge with Feature Selection by Lasso results submitted to Kaggle.
+- `lassoReg` to get the Lasso results submitted to Kaggle.
+- `kridgeWLasso` to get the Kernel Ridge with Feature Selection by Lasso results submitted to Kaggle.
